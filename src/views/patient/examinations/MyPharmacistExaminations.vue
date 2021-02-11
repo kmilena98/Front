@@ -81,7 +81,7 @@ export default {
             .get('examination/examinationHistory/' + this.$store.getters.getUserId)
             .then( res => {
 				let data = []
-                console.log(res.data)
+                //console.log(res.data)
                 res.data.forEach(element => {
 					data.push({ 
 						termin: new Date(element.term).toLocaleString(), 

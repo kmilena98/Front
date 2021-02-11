@@ -63,7 +63,7 @@ export default {
 		this.$http
             .post('examination/future', {type: 'DermatologistExamination'})
             .then( res => {
-                console.log(res.data)
+                //console.log(res.data)
 				let data = []
                 res.data.forEach(element => {
 					data.push({ 
@@ -81,7 +81,7 @@ export default {
             .get('examination/examinationHistory/' + this.$store.getters.getUserId)
             .then( res => {
 				let data = []
-                console.log(res.data)
+                //console.log(res.data)
                 res.data.forEach(element => {
 					data.push({ 
 						termin: new Date(element.term).toLocaleString(), 
